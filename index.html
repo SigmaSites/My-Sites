@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links</title>
+  <style>
+    :root {
+      --bg-light: #f9fafb;
+      --text-light: #111827;
+      --link-light: #2563eb;
+
+      --bg-dark: #020617;
+      --text-dark: #e5e7eb;
+      --link-dark: #38bdf8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: var(--bg-dark);
+        color: var(--text-dark);
+      }
+      a {
+        color: var(--link-dark);
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      body {
+        background: var(--bg-light);
+        color: var(--text-light);
+      }
+      a {
+        color: var(--link-light);
+      }
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: system-ui, sans-serif;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    li {
+      margin: 14px 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="https://example.com" target="_blank">Projekt 1</a></li>
+    <li><a href="https://example.com" target="_blank">Projekt 2</a></li>
+    <li><a href="https://example.com" target="_blank">Projekt 3</a></li>
+  </ul>
+</body>
+</html>
